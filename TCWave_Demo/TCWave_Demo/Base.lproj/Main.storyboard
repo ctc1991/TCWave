@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDB-VJ-cca" customClass="TCWave">
+                                <rect key="frame" x="67" y="213.5" width="240" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Ksf-Hj-smH"/>
+                                    <constraint firstAttribute="height" constant="120" id="yp0-j0-Aw7"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刷新频率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqO-dd-MjT">
+                                <rect key="frame" x="67" y="341" width="62.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.050000000000000003" minValue="0.0" maxValue="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="XGb-52-owm">
+                                <rect key="frame" x="135" y="335" width="174" height="31"/>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="valueChanged" id="IBa-e4-iUs"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="波浪高度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7en-uB-LoB">
+                                <rect key="frame" x="67" y="375" width="62" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="120" translatesAutoresizingMaskIntoConstraints="NO" id="kFP-c3-Mu8">
+                                <rect key="frame" x="135" y="369" width="174" height="31"/>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="valueChanged" id="mgi-IE-ljD"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7en-uB-LoB" firstAttribute="top" secondItem="SqO-dd-MjT" secondAttribute="bottom" constant="16" id="8pP-LQ-kFk"/>
+                            <constraint firstItem="XGb-52-owm" firstAttribute="leading" secondItem="SqO-dd-MjT" secondAttribute="trailing" constant="7.5" id="Bcm-vD-jBn"/>
+                            <constraint firstItem="EDB-VJ-cca" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IVp-wJ-Oc6"/>
+                            <constraint firstItem="SqO-dd-MjT" firstAttribute="leading" secondItem="EDB-VJ-cca" secondAttribute="leading" id="RtT-DZ-42Q"/>
+                            <constraint firstItem="kFP-c3-Mu8" firstAttribute="trailing" secondItem="XGb-52-owm" secondAttribute="trailing" id="UWU-CS-22a"/>
+                            <constraint firstItem="kFP-c3-Mu8" firstAttribute="centerY" secondItem="7en-uB-LoB" secondAttribute="centerY" id="WRp-5B-ca3"/>
+                            <constraint firstItem="kFP-c3-Mu8" firstAttribute="leading" secondItem="7en-uB-LoB" secondAttribute="trailing" constant="8" id="ZDV-C8-Cg8"/>
+                            <constraint firstItem="7en-uB-LoB" firstAttribute="leading" secondItem="SqO-dd-MjT" secondAttribute="leading" id="i61-Tv-VNU"/>
+                            <constraint firstItem="XGb-52-owm" firstAttribute="centerY" secondItem="SqO-dd-MjT" secondAttribute="centerY" id="lWF-T9-rSw"/>
+                            <constraint firstItem="EDB-VJ-cca" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lgk-uw-gYr"/>
+                            <constraint firstItem="SqO-dd-MjT" firstAttribute="top" secondItem="EDB-VJ-cca" secondAttribute="bottom" constant="7.5" id="svB-Xh-Ez0"/>
+                            <constraint firstItem="kFP-c3-Mu8" firstAttribute="leading" secondItem="XGb-52-owm" secondAttribute="leading" id="udS-DU-H2F"/>
+                            <constraint firstItem="XGb-52-owm" firstAttribute="trailing" secondItem="EDB-VJ-cca" secondAttribute="trailing" id="vql-Ms-qdv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="wave" destination="EDB-VJ-cca" id="wXr-ta-tPz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
