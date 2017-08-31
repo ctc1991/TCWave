@@ -1,5 +1,6 @@
 # TCWave
-A simple wave.[![License](https://img.shields.io/cocoapods/l/Smile.svg?style=flat)](http://cocoadocs.org/docsets/Smile)
+A simple wave.
+[![License](https://img.shields.io/cocoapods/l/Smile.svg?style=flat)](http://cocoadocs.org/docsets/Smile)
 
 ##Usage
 You can use TCWave in IB or just code.
