@@ -1,6 +1,9 @@
 # TCWave
 A simple wave.
+
 [![License](https://img.shields.io/cocoapods/l/Smile.svg?style=flat)](http://cocoadocs.org/docsets/Smile)
+
+![](http://upload-images.jianshu.io/upload_images/1096332-9aef7a674ccd3dc3.gif?imageMogr2/auto-orient/strip)
 
 ##Usage
 You can use TCWave in IB or just code.
