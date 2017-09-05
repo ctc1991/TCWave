@@ -5,7 +5,7 @@ A simple wave.
 
 ![](http://upload-images.jianshu.io/upload_images/1096332-9aef7a674ccd3dc3.gif?imageMogr2/auto-orient/strip)
 
-##Usage
+## Usage
 You can use TCWave in IB or just code.
 ```
 @property (weak, nonatomic) IBOutlet TCWave *wave;
